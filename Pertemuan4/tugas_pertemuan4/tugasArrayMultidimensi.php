@@ -38,6 +38,7 @@
 </head>
 <body>
     <h2>Data Mahasiswa array multidimensi</h2>
+    <h2>Nurhidayah/22/SIB-2D</h2>
 
     <?php
     // Array multidimensi untuk data mahasiswa
