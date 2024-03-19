@@ -50,7 +50,7 @@ function perkenalan1($nama, $salam){
      echo "Umur saya adalah ". hitungUmur(2001, 2023). " tahun";
      echo "<br><br>";
 // ----------------------------------------------------
-// soal no 5
+// soal no 8
 function hitungUmur1($thn_lahir, $thn_sekarang){
     $umur1 = $thn_sekarang - $thn_lahir;
     return $umur1;
