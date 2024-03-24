@@ -5,10 +5,10 @@
     $database = "prakwebdb";
     try {
         $connect = mysqli_connect($namaHost, $username, $password, $database);
-        if (!$connect) {
+        if ($connect) {
             echo "Koneksi dengan MySQL Berhasil <br>";
         } else {
-            echo "Koneksi dengan MySQL Gagal." . mysqli_connect_error();
+            echo "Koneksi dengan MySQL Gagal. <br>" . mysqli_connect_error();
         }
         $sql = "INSERT INTO user(id, username, password) VALUES('1', 'admin', '123')";
         if (mysqli_query($connect, $sql)) {

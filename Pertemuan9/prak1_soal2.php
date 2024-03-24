@@ -5,10 +5,10 @@
     $database = "prakwebdb";
     try {
         $connect = mysqli_connect($namaHost, $username, $password, $database);
-        if (!$connect) {
+        if ($connect) {
             echo "Koneksi dengan MySQL Berhasil <br>";
         } else {
-            echo "Koneksi dengan MySQL Gagal." . mysqli_connect_error();
+            echo "Koneksi dengan MySQL Gagal. <br>" . mysqli_connect_error();
         }
         $sql = "CREATE TABLE user(
             id INT PRIMARY KEY,
