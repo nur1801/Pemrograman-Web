@@ -1,5 +1,5 @@
 <?php
-// Menetapkan zona waktu dan membuka koneksi ke database MySQL
+// Mencegah serangan SQL injection
 date_default_timezone_set("Asia/Jakarta");
 $koneksi = mysqli_connect("localhost", "root", "", "prakwebdb");
 

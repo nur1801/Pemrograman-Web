@@ -1,6 +1,8 @@
 <?php
-    if(session_status() === PHP_SESSION_NONE) session_start();
-    session_destroy();
+// Menghentikan sesi yang sedang berjalan
+if(session_status() === PHP_SESSION_NONE)
+    session_start();
+session_destroy();
 
-    header("Location: index.php");
+header('location:index.php');
 ?>

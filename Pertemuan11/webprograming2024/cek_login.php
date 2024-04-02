@@ -1,4 +1,5 @@
 <?php
+// Melakukan autentikasi pengguna dengan memeriksa apakah password yang dimasukkan
 if (session_status() == PHP_SESSION_NONE)
     session_start();
 
@@ -16,8 +17,8 @@ mysqli_close($koneksi);
 $salt = $row['salt'];
 $hashed_password = $row['hashed_password'];
 if ($salt !== null && $hashed_password !== null) {
-    // $combined_password = $salt . $password;
-    if ($password == $hashed_password) {
+    $combined_password = $salt . $password;
+    if (password_verify($combined_password, $hashed_password)) {
         $_SESSION['username'] = $row['username'];
         $_SESSION['level'] = $row['level'];
         header("location:index.php");
@@ -31,3 +32,4 @@ if ($salt !== null && $hashed_password !== null) {
 }
 
 die();
+?>
