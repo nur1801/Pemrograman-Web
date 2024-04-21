@@ -16,20 +16,6 @@
         <h3 class="mt-4">Daftar Kendaraan Parkir  | Repost by Nurhidayah</a>
         </h3>
 
-        <div class="row text-center mt-2">
-            <div class="col">
-            <?php 
-            if(isset($_GET['cari'])){
-                $cari = $_GET['cari'];
-                echo "
-                <div class='text-muted text-center'>Hasil Pencarian '$cari'</div>
-                <a class='badge badge-primary' href='index.php'>Kembali</a>
-                ";
-            }
-            ?>
-            </div>
-        </div>
-
         <div class="row mt-3">
 
             <?php
