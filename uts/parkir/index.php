@@ -16,15 +16,6 @@
         <h3 class="mt-4">Daftar Kendaraan Parkir  | Repost by Nurhidayah</a>
         </h3>
 
-        <form action="index.php" method="get">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Cari Kendaraan.." name="cari" id="cari">
-                <div class="input-group-append">
-                    <input class="btn btn-outline-secondary" type="submit" id="tombolCari" value="Cari">
-                </div>
-            </div>
-        </form>
-
         <div class="row text-center mt-2">
             <div class="col">
             <?php 

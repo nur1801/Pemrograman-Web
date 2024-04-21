@@ -53,33 +53,6 @@ if(!isset($_SESSION['login'])){
                                     </div>
                                 </div>
 
-                                <div class="row mb-3">
-                                    <div class="col-lg-6">
-                                        <form action="kendaraan.php" method="get">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Cari Kendaraan.." name="cari" id="cari">
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-outline-secondary" type="submit" id="tombolCari">Cari</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <div class="row text-center mt-2">
-                                    <div class="col-md-6">
-                                    <?php 
-                                    if(isset($_GET['cari'])){
-                                        $cari = $_GET['cari'];
-                                        echo "
-                                        <div class='text-muted text-center'>Hasil Pencarian '$cari'</div>
-                                        <a class='badge badge-primary' href='kendaraan.php'>Kembali</a>
-                                        ";
-                                    }
-                                    ?>
-                                    </div>
-                                </div>
-
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h3>Daftar Kendaraan</h3>

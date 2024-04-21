@@ -23,7 +23,7 @@ if(!isset($_SESSION['login'])){
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-image="../vendor/light-bootstrap/assets/img/sidebar-5.jpg">
+        <div class="sidebar">
             <?php require_once('template/sidebar.php'); ?>
         </div>
         <div class="main-panel">

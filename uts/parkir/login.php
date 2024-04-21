@@ -32,7 +32,7 @@ if(isset($_SESSION['login'])){
                     <p class="message">Already registered? <a href="#">Sign In</a></p>
                 </form>
                 <form class="login-form" method="post" action="config/do_login.php">
-                    <input type="text" placeholder="username" name="username"/>
+                    <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" required autofocus value="<?php echo isset($_COOKIE['username']) ? $_COOKIE['username'] : ''; ?>">
                     <input type="password" placeholder="password" name="password"/>
                     <button>login</button>
                     <p class="message">Not registered? <a href="#">Create an account</a></p>

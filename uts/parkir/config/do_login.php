@@ -15,6 +15,9 @@ if(mysqli_num_rows($result)===1){
         $_SESSION['login'] = true;
         $_SESSION['user'] = $row;
 
+        // Tambahkan cookie untuk menyimpan username
+        setcookie('username', $username, time() + (86400 * 30), '/'); // Cookie berlaku selama 30 hari
+
         echo "<script>
             alert('Login Berhasil');
             window.location.href='../admin/index.php'; 
