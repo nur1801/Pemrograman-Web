@@ -2,7 +2,7 @@
 <script src="../vendor/light-bootstrap/assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="../vendor/light-bootstrap/assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="../vendor/light-bootstrap/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<!--  Plugin for Switches -->
 <script src="../vendor/light-bootstrap/assets/js/plugins/bootstrap-switch.js"></script>
 <!--  Chartist Plugin  -->
 <script src="../vendor/light-bootstrap/assets/js/plugins/chartist.min.js"></script>
