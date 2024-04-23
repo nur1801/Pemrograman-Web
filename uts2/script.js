@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        // Lakukan validasi username dan password di sini
-        // Misalnya, dengan menyimpan username dan password yang valid dalam variabel
+        // Lakukan validasi username dan password
 
         const validUsername = "Nurhidayah";
         const validPassword = "123";
